@@ -18,9 +18,9 @@
   --logo-family: 'Raleway', sans-serif;
 
   --logo-size: 18px;
-  --logo-weight: 700;
-  --logo-spacing: 0.54px;
-  --logo-line-height: 116.667%;
+  --logo-weight: 500;
+  --logo-spacing: 0.03em;
+  --logo-line-height: 1.17;
   --logo-color-first: #4d5ae5;
   --logo-color-second: #2e2f42;
   --logo-color-third: #f4f4fd;
@@ -35,12 +35,12 @@
   --h2-size: 36px;
   --h2-weight: 700;
   --h2-spacing: 0.02em;
-  --h2-line-height: 1;
+  --h2-line-height: 1.11;
 
   --h3-size: 20px;
   --h3-weight: 500;
   --h3-spacing: 0.02em;
-  --h3-line-height: 1;
+  --h3-line-height: 1.2;
 
   --body-size: 16px;
   --body-weight: 400;
@@ -83,6 +83,8 @@ h2 {
   font-weight: var(--h2-weight);
   letter-spacing: var(--h2-spacing);
   line-height: var(--h2-line-height);
+  text-align: center;
+  text-transform: capitalize;
 }
 
 h3 {
@@ -91,6 +93,8 @@ h3 {
   font-weight: var(--h3-weight);
   letter-spacing: var(--h3-spacing);
   line-height: var(--h3-line-height);
+  text-align: center;
+  text-transform: capitalize;
 }
 
 body {
@@ -99,7 +103,8 @@ body {
   font-weight: var(--body-weight);
   line-height: var(--body-line-height);
   letter-spacing: var(--body-spacing);
-  color: var(--navy-blue);
+  color: #434455;
+  background-color: #ffffff;
 }
 
 button {
@@ -109,7 +114,6 @@ button {
   line-height: var(--button-text-line-height);
   letter-spacing: var(--button-text-spacing);
   cursor: pointer;
-  border-radius: 4px;
   background-color: var(--iris);
   color: var(--white);
   border: none;
@@ -118,6 +122,12 @@ button {
 button:hover,
 button:focus {
   background-color: var(--ocean);
+}
+
+p {
+  color: #434455;
+  font-size: 16px;
+  color: #434455;
 }
 
 .link {
@@ -143,16 +153,12 @@ ol {
   line-height: var(--logo-line-height);
   letter-spacing: var(--logo-spacing);
   text-transform: var(--logo-text-transform);
-  color: var(--logo-color-second);
+  color: #4d5ae5;
   text-decoration: none;
 }
 
-.logo-web {
-  color: var(--logo-color-first);
-}
-
-.footer-logo {
-  color: var(--logo-color-third);
+.logo-studio {
+  color: #2e2f42;
 }
 
 footer {
@@ -160,9 +166,18 @@ footer {
   color: var(--cloud);
 }
 
+.footer-text {
+  color: #f4f4fd;
+}
+
+.logo-studio-footer {
+  color: #f4f4fd;
+}
+
 header address a {
   color: var(--slate);
   text-decoration: none;
+  font-style: normal;
 }
 
 header address a:hover,
