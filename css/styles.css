@@ -18,7 +18,7 @@
   --logo-family: 'Raleway', sans-serif;
 
   --logo-size: 18px;
-  --logo-weight: 500;
+  --logo-weight: 700;
   --logo-spacing: 0.03em;
   --logo-line-height: 1.17;
   --logo-color-first: #4d5ae5;
@@ -75,6 +75,7 @@ h1 {
   font-weight: var(--h1-weight);
   letter-spacing: var(--h1-spacing);
   line-height: var(--h1-line-height);
+  text-align: center;
 }
 
 h2 {
@@ -85,6 +86,7 @@ h2 {
   line-height: var(--h2-line-height);
   text-align: center;
   text-transform: capitalize;
+  color: #2e2f42;
 }
 
 h3 {
@@ -95,6 +97,7 @@ h3 {
   line-height: var(--h3-line-height);
   text-align: center;
   text-transform: capitalize;
+  color: #2e2f42;
 }
 
 body {
@@ -174,10 +177,12 @@ footer {
   color: #f4f4fd;
 }
 
-header address a {
-  color: var(--slate);
-  text-decoration: none;
+address {
   font-style: normal;
+}
+header address a {
+  color: #434455;
+  text-decoration: none;
 }
 
 header address a:hover,
@@ -192,15 +197,17 @@ header address a:focus {
   background-color: var(--white);
 }
 
-.top-line {
+.top-line-items {
   color: var(--navy-blue);
   text-decoration: none;
+  font-weight: 500;
 }
 
 .top-line:hover,
 .top-line:focus {
   color: var(--ocean);
 }
+
 .hero {
   background-color: var(--navy-blue);
   color: var(--white);
