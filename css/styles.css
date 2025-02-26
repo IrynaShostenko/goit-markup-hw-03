@@ -172,7 +172,7 @@ header address a:focus {
 #team {
   background-color: var(--cloud);
 }
-#team ul {
+#team li {
   background-color: var(--white);
 }
 
