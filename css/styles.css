@@ -112,6 +112,7 @@ button {
   border-radius: 4px;
   background-color: var(--iris);
   color: var(--white);
+  border: none;
 }
 
 button:hover,
