@@ -133,20 +133,9 @@ p {
   color: #434455;
 }
 
-.link {
-  font-family: var(--font-family);
-  font-size: var(--link-size);
-  font-weight: var(--link-weight);
-  line-height: var(--link-line-height);
-  letter-spacing: var(--link-spacing);
-  text-decoration: none;
-}
-
 ul,
 ol {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .logo {
@@ -203,9 +192,9 @@ header address a:focus {
   font-weight: 500;
 }
 
-.top-line:hover,
-.top-line:focus {
-  color: var(--ocean);
+.top-line-items:hover,
+.top-line-items:focus {
+  color: #404bbf;
 }
 
 .hero {
