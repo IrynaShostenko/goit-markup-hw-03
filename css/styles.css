@@ -185,3 +185,7 @@ header address a:focus {
 .top-line:focus {
   color: var(--ocean);
 }
+.hero {
+  background-color: var(--navy-blue);
+  color: var(--white);
+}
