@@ -66,7 +66,7 @@
   --link-weight: 400;
   --link-line-height: 1.33;
   --link-spacing: 0.04em;
-  --link-decoration: underline;
+  --link-decoration: none;
 }
 
 h1 {
@@ -109,6 +109,14 @@ button {
   line-height: var(--button-text-line-height);
   letter-spacing: var(--button-text-spacing);
   cursor: pointer;
+  border-radius: 4px;
+  background-color: var(--iris);
+  color: var(--white);
+}
+
+button:hover,
+button:focus {
+  background-color: var(--ocean);
 }
 
 .link {
@@ -153,10 +161,27 @@ footer {
 
 header address a {
   color: var(--slate);
-  transition: color 0.3s ease-in-out;
+  text-decoration: none;
 }
 
 header address a:hover,
 header address a:focus {
+  color: var(--ocean);
+}
+
+#team {
+  background-color: var(--cloud);
+}
+#team ul {
+  background-color: var(--white);
+}
+
+.top-line {
+  color: var(--navy-blue);
+  text-decoration: none;
+}
+
+.top-line:hover,
+.top-line:focus {
   color: var(--ocean);
 }
