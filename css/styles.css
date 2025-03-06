@@ -220,6 +220,12 @@ img {
   color: var(--cloud);
 }
 
+.footer-logo {
+  display: inline-block;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
 /* ==============================
    Header
    ============================== */
@@ -283,6 +289,35 @@ header address a:focus {
 .hero {
   background-color: var(--navy-blue);
   color: var(--white);
+  padding: 188px 0 188px;
+}
+
+.hero-title {
+  text-align: center;
+  max-width: 496px;
+  margin: 0 auto 48px;
+}
+
+.hero-button {
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
+  padding: 16px 32px;
+  border-radius: 4px;
+}
+/* ==============================
+   Features Section
+   ============================== */
+.features-list {
+  display: flex;
+  gap: 24px;
+}
+.features-item {
+  width: calc((100% - 72px) / 4);
+}
+.features-devision {
+  margin-bottom: 8px;
 }
 
 /* ==============================
@@ -291,8 +326,63 @@ header address a:focus {
 .team {
   background-color: var(--cloud);
 }
+
+.team-title {
+  margin-bottom: 72px;
+}
+
 .team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-item {
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
   background-color: var(--white);
+}
+
+.team-item-description {
+  padding: 32px 0;
+  text-align: center;
+}
+
+.team-member {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.team-position {
+  text-align: center;
+}
+
+/* ==============================
+   Portfolio Section
+   ============================== */
+
+.portfolio-title {
+  margin-bottom: 72px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.portfolio-list-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.portfolio-item-description {
+  padding: 32px 16px;
+  border: 1px solid var(--cornflower);
+  border-top: none;
+}
+
+.portfolio-item {
+  margin-bottom: 8px;
 }
 
 /* ==============================
@@ -301,6 +391,7 @@ header address a:focus {
 footer {
   background-color: var(--navy-blue);
   color: var(--cloud);
+  padding: 100px 0;
 }
 
 .footer-text {
