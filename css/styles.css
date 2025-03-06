@@ -383,6 +383,7 @@ header address a:focus {
 
 .portfolio-item {
   margin-bottom: 8px;
+  text-align: left;
 }
 
 /* ==============================
