@@ -1,3 +1,6 @@
+/* ==============================
+   Variables and Global Styles
+   ============================== */
 :root {
   /* Colors */
   --iris: #4d5ae5;
@@ -21,9 +24,9 @@
   --logo-weight: 700;
   --logo-spacing: 0.03em;
   --logo-line-height: 1.17;
-  --logo-color-first: #4d5ae5;
-  --logo-color-second: #2e2f42;
-  --logo-color-third: #f4f4fd;
+  --logo-color-first: var(--iris);
+  --logo-color-second: var(--navy-blue);
+  --logo-color-third: var(--cloud);
   --logo-text-transform: uppercase;
   --logo-style: normal;
 
@@ -69,45 +72,87 @@
   --link-decoration: none;
 }
 
-h1 {
-  font-family: var(--font-family);
-  font-size: var(--h1-size);
-  font-weight: var(--h1-weight);
-  letter-spacing: var(--h1-spacing);
-  line-height: var(--h1-line-height);
-  text-align: center;
+/* ==============================
+   Global Reset
+   ============================== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h2 {
-  font-family: var(--font-family);
-  font-size: var(--h2-size);
-  font-weight: var(--h2-weight);
-  letter-spacing: var(--h2-spacing);
-  line-height: var(--h2-line-height);
-  text-align: center;
-  text-transform: capitalize;
-  color: #2e2f42;
-}
-
-h3 {
-  font-family: var(--font-family);
-  font-size: var(--h3-size);
-  font-weight: var(--h3-weight);
-  letter-spacing: var(--h3-spacing);
-  line-height: var(--h3-line-height);
-  text-align: center;
-  text-transform: capitalize;
-  color: #2e2f42;
-}
-
+/* ==============================
+   Body
+   ============================== */
 body {
   font-family: var(--font-family);
   font-size: var(--body-size);
   font-weight: var(--body-weight);
   line-height: var(--body-line-height);
   letter-spacing: var(--body-spacing);
-  color: #434455;
-  background-color: #ffffff;
+  color: var(--slate);
+  background-color: var(--white);
+}
+
+/* ==============================
+   Typography Global Styles
+   ============================== */
+h1,
+h2,
+h3 {
+  font-family: var(--font-family);
+  text-align: center;
+}
+
+h1 {
+  font-size: var(--h1-size);
+  font-weight: var(--h1-weight);
+  letter-spacing: var(--h1-spacing);
+  line-height: var(--h1-line-height);
+}
+
+h2 {
+  font-size: var(--h2-size);
+  font-weight: var(--h2-weight);
+  letter-spacing: var(--h2-spacing);
+  line-height: var(--h2-line-height);
+  text-transform: capitalize;
+  color: var(--navy-blue);
+}
+
+h3 {
+  font-size: var(--h3-size);
+  font-weight: var(--h3-weight);
+  letter-spacing: var(--h3-spacing);
+  line-height: var(--h3-line-height);
+  text-transform: capitalize;
+  color: var(--navy-blue);
+}
+
+p {
+  font-size: var(--body-size);
+  color: var(--slate);
+}
+
+/* ==============================
+   Layout and Sections
+   ============================== */
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.section {
+  padding: 120px 0;
+}
+/* ==============================
+   Common Elements
+   ============================== */
+ul,
+ol {
+  list-style: none;
 }
 
 button {
@@ -127,50 +172,67 @@ button:focus {
   background-color: var(--ocean);
 }
 
-p {
-  color: #434455;
-  font-size: 16px;
-  color: #434455;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-ul,
-ol {
-  list-style: none;
+/* ==============================
+   Utility Classes
+   ============================== */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
+/* ==============================
+   Logo Styles
+   ============================== */
 .logo {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 76px;
+
   font-family: var(--logo-family);
   font-size: var(--logo-size);
   font-weight: var(--logo-weight);
   line-height: var(--logo-line-height);
   letter-spacing: var(--logo-spacing);
   text-transform: var(--logo-text-transform);
-  color: #4d5ae5;
+  color: var(--iris);
   text-decoration: none;
 }
 
 .logo-studio {
-  color: #2e2f42;
-}
-
-footer {
-  background-color: var(--navy-blue);
-  color: var(--cloud);
-}
-
-.footer-text {
-  color: #f4f4fd;
+  color: var(--navy-blue);
 }
 
 .logo-studio-footer {
-  color: #f4f4fd;
+  color: var(--cloud);
+}
+
+/* ==============================
+   Header
+   ============================== */
+header {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--cornflower);
 }
 
 address {
   font-style: normal;
 }
 header address a {
-  color: #434455;
+  color: var(--slate);
   text-decoration: none;
 }
 
@@ -179,25 +241,68 @@ header address a:focus {
   color: var(--ocean);
 }
 
-#team {
-  background-color: var(--cloud);
-}
-#team li {
-  background-color: var(--white);
-}
-
 .top-line-items {
   color: var(--navy-blue);
   text-decoration: none;
   font-weight: 500;
+  padding: 24px 0;
 }
 
 .top-line-items:hover,
 .top-line-items:focus {
-  color: #404bbf;
+  color: var(--ocean);
 }
 
+.top-line-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.top-line-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.top-line-contacts-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* ==============================
+   Hero Section
+   ============================== */
 .hero {
   background-color: var(--navy-blue);
   color: var(--white);
+}
+
+/* ==============================
+   Our Team Section
+   ============================== */
+.team {
+  background-color: var(--cloud);
+}
+.team-list {
+  background-color: var(--white);
+}
+
+/* ==============================
+   Footer
+   ============================== */
+footer {
+  background-color: var(--navy-blue);
+  color: var(--cloud);
+}
+
+.footer-text {
+  color: var(--cloud);
 }
